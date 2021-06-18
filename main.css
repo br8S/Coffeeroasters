@@ -57,7 +57,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #333D4B;
 }
 
 .collection-img {
@@ -73,6 +72,10 @@
 .collection-info {
     font-size: 1.15rem;
     line-height: 1.5rem;
+}
+
+.collection-text {
+    color: #333D4B;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -97,5 +100,34 @@
         display: flex;
         flex-direction: column;
         text-align: left;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .collection-type-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
+    }
+
+    .collection-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .collection-type-container {
+        margin: 3rem 0;
+        padding: 0 1rem;
+    }
+
+    .collection-img {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .collection-section-container {
+        margin: 6rem 0;
     }
 }
