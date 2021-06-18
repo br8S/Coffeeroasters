@@ -443,7 +443,13 @@ body {
         padding: 4rem 3rem;
     }
     .order-summary-button-container {
+        margin: 1rem 0;
         justify-content: center;
+    }
+    .order-summary-button {
+        width: 15rem; 
+        font-size: 1.25rem;
+        padding: 2rem 0;
     }
 }
 
