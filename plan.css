@@ -418,6 +418,10 @@ a {
     justify-content: space-between;
 }
 
+.footer-nav-link {
+    color: #83888F;
+}
+
 @media only screen and (max-width: 1250px) {
     .question-navigation {
         list-style: none;
