@@ -90,7 +90,7 @@ for(let i = 0; i < all_answers_container.length; i++){
                 answer_container[j].classList.add("single-answer-container-click");
                 answer_picked = true;
             }
-            orderSummary(i, place_holder[i]);
+            orderSummary(i, place_holder[i], place_holder);
             checkFive(place_holder);
         })
     }
@@ -129,13 +129,30 @@ function capsuleDeselected() {
 }
 
 /* TAKES CARE OF ORDER SUMMARY */
-function orderSummary(input_index, answer_index ) {
-    if(answer_index === 0) {
+var capsule_option;
+function orderSummary(input_index, answer_index, place_holder ) {
+    for(let i = 0; i < place_holder.length; i++) {
+        if(place_holder[i] === 0) {
+            capsule_option = true;
+        }
+    }
+    
+    if (capsule_option === true) {
         document.querySelector(".if-capsule").textContent = "using ";
+        document.querySelector(".ground-text").style.display = "none";
     }
-    else{
+    else {
         document.querySelector(".if-capsule").textContent = "as ";
+        document.querySelector(".ground-text").style.display = "inline-block";
     }
+
+    // if(answer_index === 0) {
+    //     document.querySelector(".if-capsule").textContent = "using ";
+    //     //document.querySelector(".ground-text").style.display = "none";
+    // }
+    // else{
+    //     document.querySelector(".if-capsule").textContent = "as ";
+    // }
     
     field_input[input_index].textContent = answer_container[answer_index].firstElementChild.textContent;
     field_input[input_index].classList.add("field-input-new");
