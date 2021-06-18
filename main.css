@@ -19,3 +19,83 @@
 .plan-header {
     background-image: url("assets/home/desktop/image-hero-coffeepress.jpg");
 }
+
+.create-plan-button {
+    margin: 3rem 0;
+    border-radius: 5px;
+    height: 3vh;
+    background-color: var(--dark-cyan);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fefcf7;
+
+    width: 13rem; 
+    font-size: 1.1rem;
+    padding: 1.5rem 0;
+}
+
+.create-plan-button:hover {
+    background-color: #66d2cf; 
+}
+
+.collection-section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    margin: 10rem 0;
+}
+
+.collection-type-container {
+    width: 23%;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333D4B;
+}
+
+.collection-img {
+    width: 120%;
+    margin: 2rem 0;
+}
+
+.collection-name {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.collection-info {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .collection-section-container {
+        flex-direction: column;
+    }
+    
+    .collection-type-container {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 3rem;
+    }
+
+    .collection-img {
+        width: 40%;
+    }
+
+    .collection-text {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}

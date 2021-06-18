@@ -94,6 +94,7 @@ a {
 }
 
 .header-info {
+    line-height: 1.5rem;
     width: 25rem;
 }
 
@@ -298,7 +299,7 @@ a {
 
 .order-summary-button {
     border-radius: 5px;
-    width: 33%;
+    width: 20rem;
     height: 5vh;
     background-color: #e2dedb;
     pointer-events: none;
@@ -552,6 +553,10 @@ a {
     .plan-header {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("assets/plan/desktop/image-hero-blackcup.jpg");
         padding: 8rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .header-slogan {
         padding: 1rem 0;
