@@ -129,8 +129,8 @@ function capsuleDeselected() {
 }
 
 /* TAKES CARE OF ORDER SUMMARY */
-var capsule_option;
 function orderSummary(input_index, answer_index, place_holder ) {
+    var capsule_option;
     for(let i = 0; i < place_holder.length; i++) {
         if(place_holder[i] === 0) {
             capsule_option = true;
@@ -143,16 +143,8 @@ function orderSummary(input_index, answer_index, place_holder ) {
     }
     else {
         document.querySelector(".if-capsule").textContent = "as ";
-        document.querySelector(".ground-text").style.display = "inline-block";
+        document.querySelector(".ground-text").style.display = "inline";
     }
-
-    // if(answer_index === 0) {
-    //     document.querySelector(".if-capsule").textContent = "using ";
-    //     //document.querySelector(".ground-text").style.display = "none";
-    // }
-    // else{
-    //     document.querySelector(".if-capsule").textContent = "as ";
-    // }
     
     field_input[input_index].textContent = answer_container[answer_index].firstElementChild.textContent;
     field_input[input_index].classList.add("field-input-new");

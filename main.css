@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+:root {
+    --dark-cyan: #0e8784;
+    --dark-grey-blue: #333d4b;
+    --light-cream: #fefcf7;
+    --grey: #83888f;
+    --pale-orange: #fdd6ba;
+  }
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+.plan-header {
+    background-image: url("assets/home/desktop/image-hero-coffeepress.jpg");
+}
